@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cabin Crew English — Lesson 1</title>
+<style>
+:root{
+ --navy:#17324d; --blue:#2e6385; --sky:#eaf4f8; --cream:#fbf7ef;
+ --gold:#d4a84f; --orange:#c8753d; --green:#5f806c; --ink:#26333d;
+ --white:#fff; --line:#d7e0e5;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#eef2f4;line-height:1.5}
+header{background:linear-gradient(135deg,var(--navy),var(--blue));color:white;padding:28px 34px}
+header h1{margin:0 0 5px;font-size:31px}
+header p{margin:0;opacity:.9}
+.wrap{max-width:1180px;margin:auto;padding:22px}
+.toolbar{position:sticky;top:0;z-index:10;background:white;border-bottom:1px solid var(--line);padding:10px 22px;display:flex;gap:8px;flex-wrap:wrap}
+button{border:0;border-radius:8px;padding:9px 14px;background:var(--navy);color:white;cursor:pointer;font-weight:700}
+button.alt{background:var(--gold);color:#17202a}
+button.green{background:var(--green)}
+button.light{background:#e7eef2;color:var(--navy)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+.tab{background:white;color:var(--navy);border:1px solid var(--line)}
+.tab.active{background:var(--navy);color:white}
+.panel{display:none}.panel.active{display:block}
+.card{background:white;border-radius:14px;padding:22px;margin:0 0 18px;box-shadow:0 2px 10px rgba(23,50,77,.07);border:1px solid var(--line)}
+.hero{background:var(--cream);border-left:6px solid var(--gold)}
+h2{color:var(--navy);margin-top:0} h3{color:var(--blue)}
+.teacher{background:#eef6f2;border-left:5px solid var(--green);padding:15px;border-radius:9px;margin:12px 0}
+.student{background:var(--sky);border-left:5px solid var(--blue);padding:15px;border-radius:9px;margin:12px 0}
+.tip{background:#fff8e8;border-left:5px solid var(--gold);padding:15px;border-radius:9px}
+.q{padding:11px 0;border-bottom:1px dashed #cbd6dc}
+.q:last-child{border-bottom:0}
+.answer{display:none;background:#f8f3e9;border-left:5px solid var(--gold);padding:14px;margin-top:12px;border-radius:8px}
+.wordgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.word{background:#f7fafb;border:1px solid var(--line);padding:12px;border-radius:9px}
+.timer{font-size:22px;font-weight:800;color:var(--navy)}
+table{width:100%;border-collapse:collapse;margin:12px 0}th,td{border:1px solid var(--line);padding:9px;text-align:left;vertical-align:top}th{background:#eaf1f5}
+.small{font-size:.9rem;color:#53636e}
+.badge{display:inline-block;background:var(--gold);color:#17202a;padding:4px 9px;border-radius:20px;font-weight:700;font-size:.8rem}
+.homework{border-top:5px solid var(--orange)}
+@media print{
+ body{background:white;font-size:11pt}
+ .toolbar,.tabs{display:none!important}
+ .panel{display:block!important}
+ .card{box-shadow:none;break-inside:avoid}
+ header{color:black;background:white;border-bottom:3px solid var(--navy)}
+ .answer{display:none!important}
+ .print-note{display:block}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="badge">✈ CABIN CREW ENGLISH</div>
+  <h1>Lesson 1 — Welcome Aboard!</h1>
+  <p>Getting to Know You • Diagnostic Speaking • Grammar Check • Cabin-Crew Communication • Game • Homework</p>
+ </div>
+</header>
+
+<div class="toolbar">
+ <button onclick="window.print()">🖨 Print Lesson</button>
+ <button class="light" onclick="showTab('lesson')">Lesson</button>
+ <button class="light" onclick="showTab('homework')">60-Min Homework</button>
+ <button class="alt" onclick="resetAnswers()">Reset Answers</button>
+</div>
+
+<div class="wrap">
+<div class="tabs">
+ <button class="tab active" onclick="showTab('lesson')">Teacher Lesson</button>
+ <button class="tab" onclick="showTab('student')">Student View</button>
+ <button class="tab" onclick="showTab('homework')">Homework</button>
+</div>
+
+<section id="lesson" class="panel active">
+ <div class="card hero">
+  <h2>Lesson Snapshot</h2>
+  <table>
+   <tr><th>Length</th><td>45–50 minutes</td></tr>
+   <tr><th>Focus</th><td>Speaking, listening, grammar, vocabulary, interaction</td></tr>
+   <tr><th>Professional context</th><td>Cabin crew / passenger communication</td></tr>
+   <tr><th>Teacher goal</th><td>Observe natural English without making the lesson feel like a test.</td></tr>
+  </table>
+  <div class="tip"><strong>Teacher rule for Lesson 1:</strong> Let them speak. Avoid correcting every mistake. Record useful examples and use the separate assessment pack after the lesson.</div>
+ </div>
+
+ <div class="card">
+  <h2>0–5 min — Welcome & Set the Tone</h2>
+  <div class="teacher"><strong>TEACHER VIEW:</strong> Welcome both students. Explain that today is about getting to know each other and practising useful English. Do not call it a placement test.</div>
+  <div class="student"><strong>STUDENT VIEW:</strong><p>“Today is about getting to know each other and seeing how we can use English for your future career in cabin crew. Don't worry about mistakes — just communicate and enjoy the activities.”</p></div>
+ </div>
+
+ <div class="card">
+  <h2>5–17 min — Getting to Know You</h2>
+  <div class="teacher"><strong>TEACHER VIEW:</strong> Student A interviews Student B, then swap. Ask follow-up questions when answers are short. Listen for question formation, sentence length, tense control, vocabulary and confidence.</div>
+  <div class="student">
+   <ol>
+    <li>Tell me a little about yourself.</li>
+    <li>Where are you from and where do you live?</li>
+    <li>What do you currently do?</li>
+    <li>What do you enjoy doing in your free time?</li>
+    <li>What kind of music, films or TV shows do you like?</li>
+    <li>Tell me something interesting about yourself.</li>
+    <li>Why do you want to become cabin crew?</li>
+    <li>Why are you interested in Turkish Airlines?</li>
+    <li>What do you think would be the best part of being cabin crew?</li>
+    <li>What do you think might be difficult about the job?</li>
+   </ol>
+   <p><strong>Useful follow-ups:</strong> Why? / Really? Tell me more. / Can you give me an example? / What about you?</p>
+  </div>
+ </div>
+
+ <div class="card">
+  <h2>17–25 min — Cabin-Crew Conversation</h2>
+  <div class="teacher"><strong>TEACHER VIEW:</strong> One student is cabin crew and one is the passenger. Do not give them model answers first. Swap roles. Increase difficulty if they cope easily.</div>
+  <div class="student">
+   <div class="q"><strong>Situation 1 — Seat:</strong> “Excuse me, I think this is my seat.” Then: “But I want to sit next to my husband.” / “Can I change seats?”</div>
+   <div class="q"><strong>Situation 2 — Nervous passenger:</strong> “I'm really nervous. I've never flown before.”</div>
+   <div class="q"><strong>Situation 3 — Food:</strong> “I ordered a vegetarian meal, but this isn't vegetarian.”</div>
+   <div class="q"><strong>Situation 4 — Luggage:</strong> “Can you help me put my bag in the overhead compartment?”</div>
+  </div>
+ </div>
+
+ <div class="card">
+  <h2>25–34 min — Mini Grammar Challenge</h2>
+  <div class="teacher"><strong>TEACHER VIEW:</strong> Let them answer independently first. Ask for complete sentences. Notice whether they understand the meaning as well as the form.</div>
+  <div class="student">
+   <div class="q"><strong>1. Present simple:</strong> I usually ______ at 7 o'clock.</div>
+   <div class="q"><strong>2. Present simple:</strong> I ______ English twice a week.</div>
+   <div class="q"><strong>3. Present continuous:</strong> At the moment, I ______ English.</div>
+   <div class="q"><strong>4. Past:</strong> Tell me three things you did yesterday.</div>
+   <div class="q"><strong>5. Future:</strong> What are you going to do this weekend?</div>
+   <div class="q"><strong>6. Prediction:</strong> What do you think you will be doing five years from now?</div>
+   <div class="q"><strong>7. Experience:</strong> Have you ever travelled abroad? Where did you go?</div>
+  </div>
+  <button onclick="toggleAnswer('grammarAnswer')">Show Answers / Teacher Notes</button>
+  <div id="grammarAnswer" class="answer">
+   <strong>Teacher notes:</strong> 1) wake up / get up; 2) study / learn; 3) am studying / am learning. Questions 4–7 are open answers. For #7, listen for present perfect in the first response (“Have you ever…?”) and past simple when discussing the specific trip (“I went…”). Do not require one exact vocabulary answer.
+  </div>
+ </div>
+
+ <div class="card">
+  <h2>34–44 min — ✈ Cabin Crew Taboo</h2>
+  <div class="teacher"><strong>TEACHER VIEW:</strong> Give one student a target word. They have 30–45 seconds to describe it without using the forbidden words. Swap. Award a point for a successful guess. The aim is communication, not perfect English.</div>
+  <div class="wordgrid">
+   <div class="word"><strong>AIRPLANE</strong><br><span class="small">No: fly, airport, wings, travel</span></div>
+   <div class="word"><strong>PASSPORT</strong><br><span class="small">No: travel, airport, document, country</span></div>
+   <div class="word"><strong>LUGGAGE</strong><br><span class="small">No: bag, suitcase, clothes, airport</span></div>
+   <div class="word"><strong>PASSENGER</strong><br><span class="small">No: person, airplane, travel, customer</span></div>
+   <div class="word"><strong>TURBULENCE</strong><br><span class="small">No: shaking, plane, air, flying</span></div>
+   <div class="word"><strong>PILOT</strong><br><span class="small">No: airplane, fly, cockpit, captain</span></div>
+   <div class="word"><strong>SEATBELT</strong><br><span class="small">No: seat, safety, buckle, airplane</span></div>
+   <div class="word"><strong>BOARDING PASS</strong><br><span class="small">No: ticket, airplane, airport, seat</span></div>
+  </div>
+  <div class="tip"><strong>Teacher observation:</strong> Can they paraphrase when they do not know a word? Do they keep talking or stop? Do they use examples, descriptions and synonyms?</div>
+ </div>
+
+ <div class="card">
+  <h2>44–50 min — Wrap-Up</h2>
+  <div class="student">
+   <p><strong>1.</strong> What are you hoping to improve in your English?</p>
+   <p><strong>2.</strong> What do you think is your biggest difficulty in English?</p>
+   <p><strong>3.</strong> If you could speak English perfectly one year from now, what would you want to be able to do?</p>
+  </div>
+  <div class="teacher"><strong>TEACHER VIEW:</strong> Thank them and explain that future lessons will combine grammar, speaking, games and realistic cabin-crew situations.</div>
+ </div>
+</section>
+
+<section id="student" class="panel">
+ <div class="card hero"><h2>Student View — Lesson 1</h2><p>Use this tab when students are looking at the screen. Teacher notes are hidden.</p></div>
+ <div class="card"><h2>Getting to Know You</h2><ol>
+  <li>Tell me a little about yourself.</li><li>Where are you from and where do you live?</li><li>What do you currently do?</li><li>What do you enjoy doing in your free time?</li><li>What kind of music, films or TV shows do you like?</li><li>Tell me something interesting about yourself.</li><li>Why do you want to become cabin crew?</li><li>Why are you interested in Turkish Airlines?</li><li>What do you think would be the best part of being cabin crew?</li><li>What do you think might be difficult about the job?</li>
+ </ol></div>
+ <div class="card"><h2>Cabin Crew Challenge</h2>
+  <p>Choose a role: <strong>Passenger</strong> or <strong>Cabin Crew</strong>. Have a natural conversation.</p>
+  <ul><li>Seat problem</li><li>Nervous passenger</li><li>Vegetarian meal problem</li><li>Help with luggage</li></ul>
+ </div>
+ <div class="card"><h2>Grammar Challenge</h2>
+  <ol><li>I usually ______ at 7 o'clock.</li><li>I ______ English twice a week.</li><li>At the moment, I ______ English.</li><li>Tell me three things you did yesterday.</li><li>What are you going to do this weekend?</li><li>What do you think you will be doing five years from now?</li><li>Have you ever travelled abroad? Where did you go?</li></ol>
+ </div>
+</section>
+
+<section id="homework" class="panel">
+ <div class="card homework">
+  <h2>🏠 60-Minute Homework — Cabin Crew Starter Pack</h2>
+  <p><strong>Purpose:</strong> reinforce the first lesson without turning homework into a textbook exercise.</p>
+ </div>
+ <div class="card">
+  <h2>Part 1 — Vocabulary Builder (15 min)</h2>
+  <p>Learn these 15 words and write one original sentence for each:</p>
+  <div class="wordgrid">
+   <div class="word">passenger</div><div class="word">cabin crew</div><div class="word">flight attendant</div>
+   <div class="word">boarding pass</div><div class="word">departure</div><div class="word">arrival</div>
+   <div class="word">destination</div><div class="word">luggage</div><div class="word">hand luggage</div>
+   <div class="word">seatbelt</div><div class="word">aisle</div><div class="word">window seat</div>
+   <div class="word">emergency exit</div><div class="word">turbulence</div><div class="word">boarding</div>
+  </div>
+ </div>
+ <div class="card">
+  <h2>Part 2 — Grammar: My Life in Three Time Zones (15 min)</h2>
+  <p>Write <strong>5 true sentences</strong> for each section.</p>
+  <ul><li><strong>Usually:</strong> things you normally do.</li><li><strong>Yesterday:</strong> things you did.</li><li><strong>Next weekend:</strong> things you are going to do.</li></ul>
+  <p><strong>Challenge:</strong> Add one question to each section and answer it.</p>
+ </div>
+ <div class="card">
+  <h2>Part 3 — 1-Minute Speaking Recording (10 min)</h2>
+  <p>Make a voice recording without reading a script:</p>
+  <blockquote>“Why do I want to become cabin crew, and what kind of cabin crew member do I want to be?”</blockquote>
+  <p>Speak for at least 60 seconds. Try to give reasons and examples.</p>
+ </div>
+ <div class="card">
+  <h2>Part 4 — Passenger Problem (10 min)</h2>
+  <p>Choose ONE:</p>
+  <ul><li>A passenger is afraid of flying.</li><li>A passenger has lost their boarding pass.</li><li>A passenger wants to change seats.</li><li>A passenger is unhappy with their meal.</li></ul>
+  <p>Write a short dialogue of <strong>8–10 lines</strong> between the passenger and cabin crew.</p>
+ </div>
+ <div class="card">
+  <h2>Part 5 — Reflection (10 min)</h2>
+  <p>Answer in English:</p>
+  <ol><li>What was easy for me in today's lesson?</li><li>What was difficult?</li><li>Which English word did I learn today?</li><li>What do I want to speak about more confidently next lesson?</li></ol>
+ </div>
+ <div class="tip"><strong>Teacher:</strong> If students can send the 1-minute recordings before Lesson 2, keep them. They provide useful baseline speaking evidence alongside the Lesson 1 transcript.</div>
+</div>
+</section>
+</div>
+<script>
+function showTab(id){
+ document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+ document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ const btn=[...document.querySelectorAll('.tab')].find(b=>b.textContent.toLowerCase().includes(id==='homework'?'homework':id==='student'?'student':'teacher'));
+ if(btn) btn.classList.add('active');
+}
+function toggleAnswer(id){
+ const x=document.getElementById(id); x.style.display=x.style.display==='block'?'none':'block';
+}
+function resetAnswers(){document.querySelectorAll('.answer').forEach(x=>x.style.display='none');}
+</script>
+</body>
+</html>
