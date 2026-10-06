@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cabin Crew English — Lesson 2</title>
+<style>
+:root{
+ --navy:#17324d; --blue:#2e6385; --sky:#eaf4f8; --cream:#fbf7ef;
+ --gold:#d4a84f; --orange:#c8753d; --green:#5f806c; --ink:#26333d;
+ --white:#fff; --line:#d7e0e5;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:#eef2f4;line-height:1.55}
+header{background:linear-gradient(135deg,var(--navy),var(--blue));color:white;padding:28px 34px}
+header h1{margin:0 0 5px;font-size:31px}
+header p{margin:0;opacity:.9}
+.wrap{max-width:1180px;margin:auto;padding:22px}
+.toolbar{position:sticky;top:0;z-index:10;background:white;border-bottom:1px solid var(--line);padding:10px 22px;display:flex;gap:8px;flex-wrap:wrap}
+button{border:0;border-radius:8px;padding:9px 14px;background:var(--navy);color:white;cursor:pointer;font-weight:700;font-family:inherit}
+button.alt{background:var(--gold);color:#17202a}
+button.check{background:var(--green);padding:7px 12px;font-size:.85rem}
+.jumpnav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+.jumpnav a{background:white;color:var(--navy);border:1px solid var(--line);border-radius:8px;padding:7px 12px;text-decoration:none;font-weight:700;font-size:.85rem}
+.jumpnav a:hover{background:var(--sky)}
+.card{background:white;border-radius:14px;padding:22px;margin:0 0 18px;box-shadow:0 2px 10px rgba(23,50,77,.07);border:1px solid var(--line)}
+.hero{background:var(--cream);border-left:6px solid var(--gold)}
+h2{color:var(--navy);margin-top:0}
+h3{color:var(--blue)}
+.tr{background:#f3f0e8;border-left:5px solid var(--orange);padding:10px 14px;border-radius:8px;font-style:italic;color:#5a4a33;margin:10px 0}
+.wordgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin:12px 0}
+.word{background:#f7fafb;border:1px solid var(--line);padding:11px;border-radius:9px}
+.q{padding:13px 0;border-bottom:1px dashed #cbd6dc}
+.q:last-child{border-bottom:0}
+.q p{margin:0 0 8px;font-weight:700}
+.opts label{display:block;background:#f7fafb;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:6px 0;cursor:pointer}
+.opts label:hover{background:var(--sky)}
+input[type=text]{width:220px;padding:7px 10px;border:1px solid var(--line);border-radius:7px;font-family:inherit;font-size:1em}
+textarea{width:100%;min-height:70px;padding:10px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:1em;resize:vertical}
+.fb{display:none;margin-top:8px;padding:9px 12px;border-radius:7px;font-weight:700}
+.fb.correct{background:#e7f3ea;color:#2f5a3d}
+.fb.wrong{background:#fdecec;color:#8a2e2e}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+th,td{border:1px solid var(--line);padding:9px;text-align:left;vertical-align:top}
+th{background:#eaf1f5}
+.badge{display:inline-block;background:var(--gold);color:#17202a;padding:4px 9px;border-radius:20px;font-weight:700;font-size:.8rem}
+.role-card{background:var(--sky);border-left:5px solid var(--blue);padding:15px;border-radius:9px;margin:12px 0}
+.timer-box{background:var(--cream);border:1px dashed var(--gold);border-radius:9px;padding:16px;text-align:center;margin:12px 0}
+.timer{font-size:30px;font-weight:800;color:var(--navy);margin:8px 0}
+.small{font-size:.9rem;color:#53636e}
+.step-num{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--navy);color:white;font-weight:800;margin-right:10px}
+@media print{
+ body{background:white;font-size:11pt}
+ .toolbar,.jumpnav{display:none!important}
+ .card{box-shadow:none;break-inside:avoid}
+ header{color:black;background:white;border-bottom:3px solid var(--navy)}
+ .fb{display:none!important}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="badge">✈ CABIN CREW ENGLISH</div>
+  <h1>Lesson 2 — Boarding &amp; Welcoming Passengers</h1>
+  <p>Student: _______________________ &nbsp;|&nbsp; Date: _______________ &nbsp;|&nbsp; ~45 minutes</p>
+ </div>
+</header>
+
+<div class="toolbar">
+ <button onclick="window.print()">🖨 Print</button>
+ <button class="alt" onclick="resetAnswers()">Reset Answers</button>
+</div>
+
+<div class="wrap">
+<div class="jumpnav">
+ <a href="#intro">1–2. Intro &amp; Grammar</a>
+ <a href="#practice">3. Practice</a>
+ <a href="#reading">4. Reading</a>
+ <a href="#gaps">5. Find the Mistake</a>
+ <a href="#roleplay">6. Role-Play</a>
+ <a href="#speaking">7. Speaking Challenge</a>
+ <a href="#reflect">8. Reflection</a>
+</div>
+
+<section id="intro" class="card hero">
+ <h2><span class="step-num">1</span>Today's Topic</h2>
+ <p>Today we're focusing on the language cabin crew use when passengers board the aircraft: greeting them, checking seats, and giving polite instructions.</p>
+ <h3><span class="step-num">2</span>Grammar Focus: Present Simple for Routines &amp; Polite Requests</h3>
+ <p>We use the <strong>present simple</strong> to describe routines and procedures that always happen: <em>"Crew greet passengers at the door." / "We check boarding passes."</em></p>
+ <p>We use <strong>polite request forms</strong> to ask passengers to do something, especially "Could you please...?" and "Would you mind + -ing?": <em>"Could you please take your seat?" / "Would you mind putting your bag in the overhead locker?"</em></p>
+ <div class="tr">Türkçe: Her zaman tekrar eden rutinler/prosedürler için <strong>present simple</strong> kullanırız (örn. "Crew greet passengers" – Mürettebat yolcuları karşılar). Yolculardan kibarca bir şey istemek için <strong>"Could you please...?"</strong> ve <strong>"Would you mind + -ing?"</strong> kalıplarını kullanırız.</div>
+ <h3>Key Vocabulary</h3>
+ <div class="wordgrid">
+  <div class="word"><strong>boarding pass</strong> — biniş kartı</div>
+  <div class="word"><strong>boarding gate</strong> — biniş kapısı</div>
+  <div class="word"><strong>boarding group / zone</strong> — biniş grubu/bölgesi</div>
+  <div class="word"><strong>priority boarding</strong> — öncelikli biniş</div>
+  <div class="word"><strong>boarding announcement</strong> — biniş anonsu</div>
+  <div class="word"><strong>gate agent</strong> — kapı görevlisi</div>
+  <div class="word"><strong>jet bridge / aerobridge</strong> — uçak köprüsü</div>
+  <div class="word"><strong>aisle seat</strong> — koridor koltuğu</div>
+  <div class="word"><strong>window seat</strong> — pencere koltuğu</div>
+  <div class="word"><strong>middle seat</strong> — orta koltuk</div>
+  <div class="word"><strong>row</strong> — koltuk sırası</div>
+  <div class="word"><strong>overhead locker / bin</strong> — üst bagaj dolabı</div>
+  <div class="word"><strong>carry-on bag</strong> — kabin bagajı</div>
+  <div class="word"><strong>checked baggage</strong> — kayıtlı bagaj</div>
+  <div class="word"><strong>seatbelt</strong> — emniyet kemeri</div>
+  <div class="word"><strong>seatbelt sign</strong> — emniyet kemeri işareti</div>
+  <div class="word"><strong>safety demonstration</strong> — güvenlik gösterimi</div>
+  <div class="word"><strong>emergency exit</strong> — acil çıkış</div>
+  <div class="word"><strong>tray table</strong> — katlanır masa</div>
+  <div class="word"><strong>welcome aboard</strong> — hoş geldiniz (uçakta)</div>
+  <div class="word"><strong>cabin crew</strong> — kabin memuru ekibi</div>
+  <div class="word"><strong>flight attendant</strong> — kabin memuru</div>
+  <div class="word"><strong>passenger</strong> — yolcu</div>
+  <div class="word"><strong>cabin</strong> — kabin</div>
+  <div class="word"><strong>galley</strong> — mutfak bölümü (kabin)</div>
+  <div class="word"><strong>push-back</strong> — uçağın kapıdan geri çekilmesi</div>
+  <div class="word"><strong>departure</strong> — kalkış</div>
+  <div class="word"><strong>connecting flight</strong> — aktarmalı uçuş</div>
+ </div>
+</section>
+
+<section id="practice" class="card">
+ <h2><span class="step-num">3</span>General Practice</h2>
+ <p class="small">Complete each sentence with the correct word from today's vocabulary or grammar focus.</p>
+ <div id="practiceList"></div>
+</section>
+
+<section id="reading" class="card">
+ <h2><span class="step-num">4</span>Reading: "A Morning at the Gate"</h2>
+ <p>Elif arrives at Gate 14 one hour before her flight. She checks her equipment, greets the ground staff, and waits for boarding to begin. When passengers start to arrive, she stands by the door with a warm smile and says, "Welcome aboard, could I see your boarding pass, please?" She checks each boarding pass carefully and points passengers toward their seat number.</p>
+ <p>Some passengers ask for help with their carry-on bags. Elif offers to put heavier bags in the overhead locker so that passengers with window or aisle seats can sit down quickly. She always stays polite, even when passengers are in a hurry or a little confused about where to go. "Would you mind moving to the row behind, please? There's more space for your bag there," she says to one passenger.</p>
+ <p>Once everyone is seated, Elif and the rest of the crew prepare for the safety demonstration. She checks that all overhead lockers are closed and that aisles are clear. Before the aircraft can push back from the gate, every passenger must be in their seat with their seatbelt fastened. Elif's manager always reminds new crew: "A calm, polite boarding process makes the whole flight feel safer and more comfortable for everyone."</p>
+ <div id="comprehensionList"></div>
+</section>
+
+<section id="gaps" class="card">
+ <h2><span class="step-num">5</span>Find the Mistake</h2>
+ <p class="small">Each sentence has one mistake. Choose the correct option, then use the work box to write out the full, correct sentence.</p>
+ <div id="mistakeList"></div>
+</section>
+
+<section id="roleplay" class="card">
+ <h2><span class="step-num">6</span>Role-Play: On the Day</h2>
+ <p class="small">Practise with your teacher or your partner. Try to use at least 2 phrases from the vocabulary box in each scenario.</p>
+ <div class="role-card">
+  <h3>Scenario 1 — Greeting &amp; Checking the Boarding Pass</h3>
+  <p>A passenger arrives at the aircraft door looking a little nervous. Greet them warmly, check their boarding pass, and direct them to their seat.</p>
+  <p class="small"><strong>Try:</strong> "Welcome aboard!" · "Could I see your boarding pass, please?" · "Your seat is just this way."</p>
+ </div>
+ <div class="role-card">
+  <h3>Scenario 2 — Overhead Locker Space</h3>
+  <p>A passenger's carry-on bag doesn't fit in the locker above their seat. Offer a polite solution.</p>
+  <p class="small"><strong>Try:</strong> "Would you mind if I put this in a locker further back?" · "Let me help you with that."</p>
+ </div>
+ <div class="role-card">
+  <h3>Scenario 3 — Seatbelt Reminder Before Push-Back</h3>
+  <p>A passenger is still standing in the aisle after the seatbelt sign is on. Ask them politely to sit down and fasten their seatbelt.</p>
+  <p class="small"><strong>Try:</strong> "Could you please take your seat?" · "We'll be departing shortly, so please fasten your seatbelt."</p>
+ </div>
+ <div class="role-card">
+  <h3>Scenario 4 — Confused About Seat Row</h3>
+  <p>A passenger sits in the wrong row by mistake. Check their boarding pass and help them find the correct seat without embarrassing them.</p>
+  <p class="small"><strong>Try:</strong> "I think this might be the wrong row — could I check your boarding pass again?" · "No problem at all, it's just two rows back."</p>
+ </div>
+</section>
+
+<section id="speaking" class="card">
+ <h2><span class="step-num">7</span>Speaking Challenge</h2>
+ <div class="timer-box">
+  <p><strong>Record yourself for 1–2 minutes.</strong></p>
+  <div class="timer">🎙️ 1–2 min</div>
+  <p>Imagine you are welcoming a passenger on board and helping them find their seat. Try to use at least <strong>5 phrases</strong> from today's lesson (vocabulary, present simple, or polite requests).</p>
+ </div>
+</section>
+
+<section id="reflect" class="card">
+ <h2><span class="step-num">8</span>Self-Reflection</h2>
+ <p class="small">Tick what feels true for you today, then answer the two short questions.</p>
+ <label style="display:block;margin:6px 0"><input type="checkbox"> I can greet a passenger politely in English.</label>
+ <label style="display:block;margin:6px 0"><input type="checkbox"> I can ask a passenger to do something using "Could you please...?" or "Would you mind...?"</label>
+ <label style="display:block;margin:6px 0"><input type="checkbox"> I understood the reading passage without help.</label>
+ <label style="display:block;margin:6px 0"><input type="checkbox"> I felt confident during the role-play.</label>
+ <p><strong>What was the most useful phrase you learned today?</strong></p>
+ <textarea></textarea>
+ <p style="margin-top:14px"><strong>What would you like more practice with next lesson?</strong></p>
+ <textarea></textarea>
+</section>
+
+</div>
+
+<script>
+const KEYS = {
+ practice: [
+  {q:"Crew always ______ passengers with a smile at the door.", a:["greet","greets"]},
+  {q:"______ you please take your seat before push-back?", a:["could"]},
+  {q:"Would you mind ______ your bag in the overhead locker?", a:["putting"]},
+  {q:"Passengers show their ______ ______ before they board.", a:["boarding pass"]},
+  {q:"A passenger with a window seat usually boards before someone with an ______ seat.", a:["aisle"]},
+  {q:"Before take-off, every passenger must fasten their ______.", a:["seatbelt"]},
+  {q:"Crew check boarding passes at the ______.", a:["gate","boarding gate"]},
+  {q:"We always say \"______ aboard!\" to welcome passengers.", a:["welcome"]},
+ ],
+ comprehension: [
+  {q:"How long before her flight does Elif arrive at the gate?", opts:["30 minutes","1 hour","2 hours","15 minutes"], correct:1},
+  {q:"What does Elif say first to each passenger at the door?", opts:["\"Please hurry up.\"","\"Welcome aboard, could I see your boarding pass, please?\"","\"Find your own seat.\"","\"Sit down now.\""], correct:1},
+  {q:"What does Elif help some passengers with?", opts:["Their meals","Their carry-on bags","Their passports","Their phones"], correct:1},
+  {q:"Why does Elif ask a passenger to move to the row behind?", opts:["The seat is broken","There's more space for the bag there","The passenger is in the wrong seat","The row is for crew only"], correct:1},
+  {q:"What must be true before the aircraft pushes back from the gate?", opts:["All lockers are open","All passengers are standing","Every passenger is seated with a seatbelt fastened","The captain is on the phone"], correct:2},
+  {q:"What does Elif check before the safety demonstration?", opts:["Passenger passports","That overhead lockers are closed and aisles are clear","The weather forecast","The food trolley"], correct:1},
+  {q:"How does Elif treat passengers who seem confused or in a hurry?", opts:["She ignores them","She stays polite","She asks them to leave","She calls the captain"], correct:1},
+  {q:"What does Elif's manager say makes a flight feel safer and more comfortable?", opts:["A fast boarding process","A calm, polite boarding process","A quiet aircraft","A full flight"], correct:1},
+  {q:"Where does Elif stand to greet passengers?", opts:["In the cockpit","By the door","At the check-in desk","In the galley"], correct:1},
+  {q:"What does Elif point passengers toward after checking their boarding pass?", opts:["The exit","Their seat number","The toilet","The galley"], correct:1},
+ ],
+ mistakes: [
+  {s:"Could you please to take your seat?", opts:["Could you please take your seat?","Could you please takes your seat?","Could you please taking your seat?"], correct:0},
+  {s:"Would you mind putt your bag in the locker?", opts:["Would you mind putting your bag in the locker?","Would you mind to put your bag in the locker?","Would you mind puts your bag in the locker?"], correct:0},
+  {s:"Crew greets passengers with a smile every flight.", opts:["Crew greet passengers with a smile every flight.","Crew greeting passengers with a smile every flight.","Crew is greet passengers with a smile every flight."], correct:0},
+  {s:"She check the boarding pass carefully.", opts:["She checks the boarding pass carefully.","She checking the boarding pass carefully.","She are checking the boarding pass carefully."], correct:0},
+  {s:"Please fasten you seatbelt before push-back.", opts:["Please fasten your seatbelt before push-back.","Please fasten you're seatbelt before push-back.","Please fasten his seatbelt before push-back."], correct:0},
+  {s:"He sit in the wrong row by mistake.", opts:["He sits in the wrong row by mistake.","He sitting in the wrong row by mistake.","He is sit in the wrong row by mistake."], correct:0},
+ ]
+};
+
+function buildPractice(){
+ const box = document.getElementById('practiceList');
+ KEYS.practice.forEach((item, i) => {
+  const div = document.createElement('div');
+  div.className = 'q';
+  div.innerHTML = `<p>${i+1}. ${item.q}</p>
+   <input type="text" id="p${i}"> <button class="check" onclick="checkText(${i})">Check</button>
+   <div class="fb" id="pf${i}"></div>`;
+  box.appendChild(div);
+ });
+}
+function checkText(i){
+ const val = document.getElementById('p'+i).value.trim().toLowerCase();
+ const fb = document.getElementById('pf'+i);
+ const ok = KEYS.practice[i].a.includes(val);
+ fb.style.display='block';
+ fb.className = 'fb ' + (ok ? 'correct':'wrong');
+ fb.textContent = ok ? 'Correct!' : 'Not quite — think about the vocabulary or grammar focus above and try again.';
+}
+
+function buildComprehension(){
+ const box = document.getElementById('comprehensionList');
+ KEYS.comprehension.forEach((item, i) => {
+  const div = document.createElement('div');
+  div.className = 'q';
+  let opts = item.opts.map((o,j)=>`<label><input type="radio" name="c${i}" value="${j}"> ${o}</label>`).join('');
+  div.innerHTML = `<p>${i+1}. ${item.q}</p><div class="opts">${opts}</div>
+   <button class="check" onclick="checkMC('c${i}', ${item.correct}, 'cf${i}')">Check</button>
+   <div class="fb" id="cf${i}"></div>`;
+  box.appendChild(div);
+ });
+}
+
+function buildMistakes(){
+ const box = document.getElementById('mistakeList');
+ KEYS.mistakes.forEach((item, i) => {
+  const div = document.createElement('div');
+  div.className = 'q';
+  let opts = item.opts.map((o,j)=>`<label><input type="radio" name="m${i}" value="${j}"> ${o}</label>`).join('');
+  div.innerHTML = `<p>${i+1}. ${item.s}</p><div class="opts">${opts}</div>
+   <button class="check" onclick="checkMC('m${i}', ${item.correct}, 'mf${i}')">Check</button>
+   <div class="fb" id="mf${i}"></div>
+   <p class="small" style="margin-top:8px">Work box — write the full corrected sentence:</p>
+   <textarea></textarea>`;
+  box.appendChild(div);
+ });
+}
+
+function checkMC(name, correctIdx, fbId){
+ const chosen = document.querySelector(`input[name="${name}"]:checked`);
+ const fb = document.getElementById(fbId);
+ fb.style.display='block';
+ if(!chosen){ fb.className='fb wrong'; fb.textContent='Please choose an option first.'; return; }
+ const ok = parseInt(chosen.value) === correctIdx;
+ fb.className = 'fb ' + (ok ? 'correct':'wrong');
+ fb.textContent = ok ? 'Correct!' : 'Not quite — re-read the sentence and try again.';
+}
+
+function resetAnswers(){
+ document.querySelectorAll('input[type=text]').forEach(i=>i.value='');
+ document.querySelectorAll('input[type=radio]').forEach(i=>i.checked=false);
+ document.querySelectorAll('input[type=checkbox]').forEach(i=>i.checked=false);
+ document.querySelectorAll('textarea').forEach(t=>t.value='');
+ document.querySelectorAll('.fb').forEach(f=>f.style.display='none');
+}
+
+buildPractice();
+buildComprehension();
+buildMistakes();
+</script>
+</body>
+</html>
